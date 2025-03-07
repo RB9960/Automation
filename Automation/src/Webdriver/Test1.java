@@ -16,6 +16,7 @@ public class Test1 {
 		nav.forward();
 		Thread.sleep(4000);
 		nav.refresh();
+		System.out.println("hello");
 		
 		
 		System.out.println("The window is:"+driver.getWindowHandles());
