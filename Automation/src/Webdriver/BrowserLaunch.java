@@ -20,9 +20,9 @@ public class BrowserLaunch {
 		Thread.sleep(6000);
 		r.refresh();
 		
-		//System.out.println("page title:"+driver.getTitle());
-		//System.out.println("page URL:"+driver.getCurrentUrl());
-		//System.out.println("page source:"+driver.getPageSource());
+		System.out.println("page title:"+driver.getTitle());
+		System.out.println("page URL:"+driver.getCurrentUrl());
+		System.out.println("page source:"+driver.getPageSource());
 		driver.close();
 		
 		
