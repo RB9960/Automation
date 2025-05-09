@@ -12,6 +12,7 @@ public class Test2 {
 	public static void main(String[] args) throws InterruptedException {
 		
 		WebDriver driver = new ChromeDriver();
+		
 		driver.get("http://3.110.196.103/#/dashboard");
         
 		Window win = driver.manage().window();
@@ -19,15 +20,15 @@ public class Test2 {
 		win.maximize();
 		Thread.sleep(4000);
 		win.fullscreen();
-		Thread.sleep(40000);
+		Thread.sleep(4000);//4000 is a 4sec 
 		win.minimize();
         
 		System.out.println(win.getSize());
 		
 		Dimension size = win.getSize();
-		System.out.println("The height of the window:"+size.getHeight());
-		System.out.println("The width of the window:"+size.getWidth());
-		
+		System.out.println("The height of the window in pixel:"+size.getHeight());
+		System.out.println("The width of the window in pixel:"+size.getWidth());
+		driver.close();
 		
 	}
 
